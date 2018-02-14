@@ -22,7 +22,7 @@
                         class="listModules__table-name"
                         label="Название модуля"
                         sortable>
-                    <template slot-scope="scope">
+                    <template slot-scope="scope" class="cell__name">
                         <div class="cell__name-name">{{scope.row.moduleName}}</div>
                         <div class="cell__name-img"><img :src="scope.row.logoHref" width="30" :alt="scope.row.moduleName"></div>
                     </template>
