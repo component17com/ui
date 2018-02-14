@@ -21,11 +21,14 @@
                 <el-table-column
                         class="listModules__table-name"
                         label="Название модуля"
+                        min-width="100px"
                         sortable>
                     <template slot-scope="scope">
                         <div class="cell__name">
-                            <div class="cell__name-name">{{scope.row.moduleName}}</div>
-                            <div class="cell__name-img"><img :src="scope.row.logoHref" width="30" :alt="scope.row.moduleName"></div>
+                            <div class="cell__name-img"><img :src="scope.row.logoHref" width="30"
+                                                             :alt="scope.row.moduleName"></div>
+                            <a href="" class="cell__name-name"
+                               :title="scope.row.moduleName">{{scope.row.moduleName}}</a>
                         </div>
                     </template>
                 </el-table-column>
@@ -33,24 +36,30 @@
                         prop="version"
                         label="Версия"
                         sortable>
+                    <template slot-scope="scope">
+                        <div class="cell__version">{{scope.row.version}}</div>
+                    </template>
                 </el-table-column>
                 <el-table-column
-                        prop="status"
                         label="Статус"
                         sortable>
+                    <template slot-scope="scope">
+                        <div class="cell__status">
+                            <div class="cell__status-title">
+                                <i :class="scope.row.status.icon"></i>{{scope.row.status.text}}
+                            </div>
+                        </div>
+                    </template>
                 </el-table-column>
+
                 <el-table-column
-                        label="Действия"
-                >
+                        label="Действия">
                     <template slot-scope="scope">
                         <el-button
-                                size="mini"
-                                @click="handleEdit(scope.$index, scope.row)">Edit
+                                @click="">Edit
                         </el-button>
                         <el-button
-                                size="mini"
-                                type="danger"
-                                @click="handleDelete(scope.$index, scope.row)">Delete
+                                @click="">Delete
                         </el-button>
                     </template>
                 </el-table-column>
@@ -68,25 +77,37 @@
                     {
                         version: '1.0.5 (обновлено 29.01.2018, 22:40)',
                         name: 'Tomas',
-                        status: 'No. 189, Grove St, Los Angeles',
+                        status: {
+                            text: 'Публичный',
+                            icon: 'mdi mdi-checkbox-marked-circle'
+                        },
                         moduleName: "Агрегатор почтовых ящиков",
                         logoHref: 'http://brandmark.io/logo-rank/random/apple.png'
                     }, {
                         version: '1.0.5 (обновлено 29.01.2018, 22:40)',
                         name: 'Tom',
-                        status: 'No. 189, Grove St, Los Angeles',
+                        status: {
+                            text: 'Публичный',
+                            icon: 'mdi mdi-checkbox-marked-circle'
+                        },
                         moduleName: "TO-DO LIST",
                         logoHref: 'http://brandmark.io/logo-rank/random/apple.png'
                     }, {
                         version: '1.0.5 (обновлено 29.01.2018, 22:40)',
                         name: 'Tom',
-                        status: 'No. 189, Grove St, Los Angeles',
+                        status: {
+                            text: 'Публичный',
+                            icon: 'mdi mdi-checkbox-marked-circle'
+                        },
                         moduleName: "Калькулятор",
                         logoHref: 'http://brandmark.io/logo-rank/random/apple.png'
                     }, {
                         version: '1.0.5 (обновлено 29.01.2018, 22:40)',
                         name: 'Tom',
-                        status: 'No. 189, Grove St, Los Angeles',
+                        status: {
+                            text: 'Публиdчный',
+                            icon: 'mdi mdi-checkbox-marked-circle'
+                        },
                         moduleName: "Бухгалтерия и учет сотрудников",
                         logoHref: 'http://brandmark.io/logo-rank/random/apple.png'
                     }]

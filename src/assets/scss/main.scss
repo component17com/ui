@@ -3649,6 +3649,8 @@ body, html {
       padding: 0 35px 0 0;
       position: relative;
       transition: 0.3s ease;
+      min-width: 20px;
+      height: auto;
       &:focus{
         outline: none;
       }
@@ -3781,9 +3783,64 @@ body, html {
   }
 }
 /*----Таблица в списке модулей-----*/
-.cell__name{
-  display: flex;
+.listModules__table{
+  margin-top: 20px;
+  .cell__name{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &-name{
+      margin-left: 20px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: left;
+      color: #263238;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: 0.3s ease;
+      &:hover{
+        text-decoration: none;
+        color: #ff5722;
+      }
+    }
+  }
+  .cell__version{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #595959;
+  }
+  .cell__status{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #595959;
+    display: flex;
+    align-items: center;
+    i{
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
 }
+
 
 /*----Veritify-----*/
 .veritify{
