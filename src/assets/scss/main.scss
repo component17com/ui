@@ -3784,3 +3784,82 @@ body, html {
 .cell__name{
   display: flex;
 }
+
+/*----Veritify-----*/
+.veritify{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  .veritify-title{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #363636;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .veritify-text{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #363636;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .veritify-a{
+    display: flex;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff5722;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+  }
+  .veritify__noMessage-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #888888;
+    font-weight: 500;
+  }
+  .veritify__noMessage-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #888888;
+    font-weight: normal;
+  }
+  .veritify__noMessage-text-a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff5722;
+  }
+}

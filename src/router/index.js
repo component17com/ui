@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'index',
       component: require('../pages/index').default
-    }
+    },
+      {
+          path: '/veritify',
+          name: 'veritify',
+          component: require('../pages/veritify').default
+      }
   ]
 })
