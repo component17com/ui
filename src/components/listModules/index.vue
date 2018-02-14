@@ -53,17 +53,48 @@
                 </el-table-column>
 
                 <el-table-column
-                        label="Действия">
+                        label="Действия" align="center">
                     <template slot-scope="scope">
-                        <el-button
-                                @click="">Edit
-                        </el-button>
-                        <el-button
-                                @click="">Delete
-                        </el-button>
+                        <div class="cell__buttons">
+
+                            <el-button
+                                    @click=""
+                                    size="small">
+                                <i class="mdi mdi-circle"></i>
+                            </el-button>
+                            <el-button
+                                    @click=""
+                                    size="small">
+                                <i class="mdi mdi-bell"></i>
+                            </el-button>
+                            <el-button
+                                    @click=""
+                                    size="small">
+                                <i class="mdi mdi-bell"></i>
+                            </el-button>
+                            <el-button
+                                    @click=""
+                                    size="small">
+                                <i class="mdi mdi-bell"></i>
+                            </el-button>
+
+                        </div>
                     </template>
                 </el-table-column>
             </el-table>
+            <div class="listModules__table-pagination">
+                <div class="demonstration">Показано <span>1-15</span> из <span>1103</span> записей</div>
+                <div class="seeOn">Показать по</div>
+                <el-pagination
+                        @size-change="handleSizeChange"
+                        @current-change="handleCurrentChange"
+                        :current-page.sync="currentPage4"
+                        :page-sizes="[100, 200, 300, 400]"
+                        :page-size="100"
+                        layout="total, sizes, prev, pager, next, jumper"
+                        :total="4000">
+                </el-pagination>
+            </div>
         </div>
     </div>
 </template>
@@ -105,7 +136,7 @@
                         version: '1.0.5 (обновлено 29.01.2018, 22:40)',
                         name: 'Tom',
                         status: {
-                            text: 'Публиdчный',
+                            text: 'Публичный',
                             icon: 'mdi mdi-checkbox-marked-circle'
                         },
                         moduleName: "Бухгалтерия и учет сотрудников",

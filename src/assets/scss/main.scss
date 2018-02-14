@@ -3651,6 +3651,7 @@ body, html {
       transition: 0.3s ease;
       min-width: 20px;
       height: auto;
+      text-transform: none;
       &:focus{
         outline: none;
       }
@@ -3839,6 +3840,41 @@ body, html {
       font-size: 18px;
     }
   }
+  .cell__buttons{
+    display: flex;
+    justify-content: center;
+    .el-button{
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease;
+      font-size: 16px;  font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: #888888;
+      padding: 0;
+      &:hover{
+        color: #263238;
+        background-color: transparent;
+        border: 1px solid #263238;
+      }
+      &:focus{
+        background-color: transparent;
+        outline: none;
+        color: #ff5722;
+        border: 1px solid #ff5722;
+      }
+    }
+  }
+}
+/*-----Pagination------*/
+.listModules__table-pagination{
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
 }
 
 
