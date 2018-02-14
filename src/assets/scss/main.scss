@@ -3869,7 +3869,18 @@ body, html {
       }
     }
   }
+  .has-gutter tr th .cell{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #888888;
+  }
 }
+
 /*-----Pagination------*/
 .listModules__table-pagination{
   display: flex;

@@ -82,19 +82,6 @@
                     </template>
                 </el-table-column>
             </el-table>
-            <div class="listModules__table-pagination">
-                <div class="demonstration">Показано <span>1-15</span> из <span>1103</span> записей</div>
-                <div class="seeOn">Показать по</div>
-                <el-pagination
-                        @size-change="handleSizeChange"
-                        @current-change="handleCurrentChange"
-                        :current-page.sync="currentPage4"
-                        :page-sizes="[100, 200, 300, 400]"
-                        :page-size="100"
-                        layout="total, sizes, prev, pager, next, jumper"
-                        :total="4000">
-                </el-pagination>
-            </div>
         </div>
     </div>
 </template>
