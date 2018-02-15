@@ -5,15 +5,6 @@
 			<div class="header__logo">
 				<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 175 36" style="enable-background:new 0 0 175 36;" xml:space="preserve" width="175px" height="36px">
-<style type="text/css">
-	.logo_acsent {
-		fill: #ff5521;
-	}
-
-	.logo_white {
-		fill: #FFFFFF;
-	}
-</style>
 <g id="f44033a3-9a3d-4612-a659-0276e6650a3f">
 	<g id="_x35_c10b948-7f96-42b1-8221-e59b924b3d0d">
 		<g>
@@ -77,5 +68,11 @@
 </script>
 
 <style scoped>
+	.logo_acsent {
+		fill: #ff5521;
+	}
 
+	.logo_white {
+		fill: #FFFFFF;
+	}
 </style>

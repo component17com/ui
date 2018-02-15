@@ -15,6 +15,11 @@ export default new Router({
           path: '/veritify',
           name: 'veritify',
           component: require('../pages/veritify').default
+      },
+      {
+          path: '/tokens',
+          name: 'tokens',
+          component: require('../pages/tokens').default
       }
   ]
 })

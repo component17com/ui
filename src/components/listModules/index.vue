@@ -42,7 +42,8 @@
                 </el-table-column>
                 <el-table-column
                         label="Статус"
-                        sortable>
+                        sortable
+                        width="200px">
                     <template slot-scope="scope">
                         <div class="cell__status">
                             <div class="cell__status-title">
@@ -53,7 +54,7 @@
                 </el-table-column>
 
                 <el-table-column
-                        label="Действия" align="center">
+                        label="Действия" align="center" min-width="60px">
                     <template slot-scope="scope">
                         <div class="cell__buttons">
 

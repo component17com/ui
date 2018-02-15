@@ -9,7 +9,6 @@
   src: url("../fonts/materialdesignicons-webfont.woff");
 }
 @import "fonts";
-
 @keyframes border_bottom {
   0% {
     transform: scaleX(0);
@@ -39,6 +38,7 @@ li{
   font-weight: normal;
 }
 body, html {
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   -webkit-text-size-adjust: 100%;
   text-decoration: none;
@@ -110,7 +110,6 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   .nav {
     .nav__link {
       margin-right: 60px;
@@ -158,7 +157,6 @@ body, html {
       }
     }
   }
-
   .search {
     position: relative;
     .search__input {
@@ -429,6 +427,9 @@ body, html {
 .footer__bot{
   display: flex;
   padding: 10px 0;
+  .footer__bot-md-a{
+    display: none;
+  }
 
   .footer__bot-solgl{
     font-family: 'Roboto', sans-serif;
@@ -725,7 +726,6 @@ body, html {
 .documentation__right-col{
   margin-right: -15px;
 }
-
 /*------SUPPORT------*/
 .support-container{
   margin-bottom: 50px;
@@ -1052,7 +1052,6 @@ body, html {
     color: #ff5722;
   }
 }
-
 /*-----Коментарии----*/
 .comments-wrapper{
   padding-top: 20px;
@@ -1299,7 +1298,6 @@ body, html {
     }
   }
 }
-
 /*-----LOGIN-----*/
 .login__mail{
   &-title{
@@ -1833,20 +1831,30 @@ body, html {
     transform: scaleX(1);
   }
 }
+h1{
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+h2{
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+h3{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+h4{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 p{
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   color: #363636;
-}
-h3{
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-}
-h4{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
 }
 li{
   font-size: 14px;
@@ -2434,14 +2442,14 @@ body, html {
         transition: 0.3s ease;
         a{
           font-family: 'Roboto', sans-serif;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
           line-height: 1.88;
           letter-spacing: normal;
           text-align: left;
-          color: #888888;
+          color: #363636;
           transition: 0.3s ease;
           &:hover{
             color: #ff5722;
@@ -2540,7 +2548,6 @@ body, html {
 .documentation__right-col{
   margin-right: -15px;
 }
-
 /*------SUPPORT------*/
 .support-container{
   margin-bottom: 50px;
@@ -2867,7 +2874,6 @@ body, html {
     color: #ff5722;
   }
 }
-
 /*-----Коментарии----*/
 .comments-wrapper{
   padding-top: 20px;
@@ -3114,7 +3120,6 @@ body, html {
     }
   }
 }
-
 /*-----LOGIN-----*/
 .login__mail{
   &-title{
@@ -3601,7 +3606,6 @@ body, html {
     }
   }
 }
-
 /*----Header Develop----*/
 .lkHeader__top{
   border-top-left-radius: 3px;
@@ -3666,7 +3670,6 @@ body, html {
     }
   }
 }
-
 .lkHeader__menu{
   display: flex;
   justify-content: space-between;
@@ -3728,7 +3731,6 @@ body, html {
     border-radius: 5px;
   }
 }
-
 /*----Список модулей-----*/
 .listModules-title{
   font-family: 'Roboto', sans-serif;
@@ -3880,15 +3882,7 @@ body, html {
     color: #888888;
   }
 }
-
 /*-----Pagination------*/
-.listModules__table-pagination{
-  display: flex;
-  padding: 10px 15px;
-  align-items: center;
-}
-
-
 /*----Veritify-----*/
 .veritify{
   text-align: center;
@@ -3966,4 +3960,81 @@ body, html {
     text-align: center;
     color: #ff5722;
   }
+}
+
+/*----MEDIA----*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*----NAV----*/
+  .nav-container{
+    .nav{
+      justify-content: space-between;
+      width: 100%;
+      .nav__link{
+        margin-right: 20px;
+        .nav__link-a{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  /*----FOOTER----*/
+  .footer__top{
+    flex-wrap: wrap;
+    .footer__top-logo{
+      visibility: hidden;
+      display: none;
+    }
+
+    &-nav{
+      display: none;
+    }
+  }
+  .footer__bot{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .footer__bot-solgl{
+      border-right: none;
+      flex-basis: 100%;
+      justify-content: center;
+      text-align: center;
+      padding-right: 0;
+      margin-top: 5px;
+    }
+    .footer__bot-copy{
+      text-align: center;
+      margin-top: 10px;
+    }
+    .footer__bot-konf{
+      flex-basis: 100%;
+      justify-content: center;
+      text-align: center;
+      padding-left: 0;
+      margin-top: 5px;
+    }
+    .footer__bot-md-a{
+      flex-basis: 100%;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      color: #888888;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+      margin-top: 5px;
+      &:hover{
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
 }

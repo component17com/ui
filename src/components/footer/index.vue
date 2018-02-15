@@ -72,6 +72,7 @@
         <div class="container-fluid footer-container-bot">
             <div class="container">
                 <div class="footer__bot">
+                    <a href="" class="footer__bot-md-a">Перейти в Ustore</a>
                     <a href="" title="" class="footer__bot-solgl">Соглашение об использовании сайта</a>
                     <a href="" title="" class="footer__bot-konf">Политика конфиденциальности</a>
                     <div class="footer__bot-copy">© 2017. Все права защищены. Component17</div>
