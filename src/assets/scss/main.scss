@@ -1904,9 +1904,18 @@ body, html {
         padding: 10px 15px;
         cursor: pointer;
         transition: 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+          background-color: #ff7042;
+        }
+        &:focus{
+          background-color: #ff8964;
+        }
         .mdi{
           margin-right: 10px;
         }
+
       }
       .header__button-button:focus{
         outline: none;

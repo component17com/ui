@@ -18,7 +18,7 @@
     export default {
         name: 'App',
         components: {
-            'header-app': require('./components/header/login').default,
+            'header-app': require('./components/header/main').default,
             'footer-app': require('./components/footer/index').default,
             'menu-app': require('./components/menu/index').default,
         }
